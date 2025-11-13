@@ -1,7 +1,16 @@
-#include "Foo.h"
+#include <Arduino.h>
 
-int main () {
-    Foo foo = Foo();
+#include <Startup.h>
 
-    foo.helloWorld();
+void setup()
+{
+  Serial.begin(115200);
+
+  splash::Startup splash;
+  splash.print(Serial);
+}
+
+void loop()
+{
+  // put your main code here, to run repeatedly:
 }
