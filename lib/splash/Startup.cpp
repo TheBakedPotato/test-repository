@@ -4,5 +4,7 @@ using namespace splash;
 
 void Startup::print(HardwareSerial &serial)
 {
+    serial.println("====================");
     serial.println("This is a test print");
+    serial.println("====================");
 }
